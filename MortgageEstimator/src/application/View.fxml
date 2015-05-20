@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MortgageController">
+   <children>
+      <AnchorPane prefHeight="206.0" prefWidth="273.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Total Gross Income" />
+            <Label layoutX="14.0" layoutY="46.0" text="Total Monthly Debt" />
+            <Label layoutX="14.0" layoutY="78.0" text="Mortgage Interest Rate" />
+            <Button layoutX="194.0" layoutY="167.0" mnemonicParsing="false" onAction="#max_payment_allowed" text="Calculate" />
+            <TextField fx:id="gross_income" layoutX="133.0" layoutY="10.0" prefHeight="25.0" prefWidth="136.0" />
+            <TextField fx:id="monthly_debt" layoutX="133.0" layoutY="42.0" prefHeight="25.0" prefWidth="136.0" />
+            <TextField fx:id="interest_rate" layoutX="153.0" layoutY="74.0" prefHeight="25.0" prefWidth="116.0" />
+            <ChoiceBox fx:id="term_years" layoutX="129.0" layoutY="106.0" prefHeight="25.0" prefWidth="130.0">
+               <contextMenu>
+                  <ContextMenu>
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="10" />
+                        <MenuItem mnemonicParsing="false" text="15" />
+                        <MenuItem mnemonicParsing="false" text="30" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu>
+            </ChoiceBox>
+            <Label layoutX="14.0" layoutY="110.0" text="Term" />
+            <Label layoutX="172.0" layoutY="110.0" text="Years" />
+            <Label layoutX="14.0" layoutY="140.0" text="Down Payment" />
+            <TextField fx:id="down_payment" layoutX="138.0" layoutY="136.0" prefHeight="25.0" prefWidth="130.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
